@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    <body>
+        <script>
+            $(function() {
+                $( "#accordion" ).accordion({
+                    heightStyle: "content",
+					beforeActivate: function( event, ui ) {
+						if($("#collapse_menu").hasClass('hidden')){
+							show_menu(event);
+						}
+					}
+                });
+            });
+        </script>
+        <div id="left_sidebar">
+            <div id="accordion">
+                <h3 class="icon_32_setup"><span class="heading_text">Settings</span></h3>
+                <div>
+                    <ul>
+                        <li><a href="#">Contact Details</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Select Language</a></li>
+                        <li><a href="#">Social Accounts</a></li>
+                        <li><a href="#">more...</a></li>                    
+                    </ul>
+                </div>
+                <h3 class="icon_32_color"><span class="heading_text">Design</span></h3>
+                <div>
+                    <ul>
+                        <li><a href="#">Select Template</a></li>
+                        <li><a href="#">Select background image</a></li>
+                        <li><a href="#">Color palette</a></li>                    
+                    </ul>
+                </div>
+                <h3 class="icon_32_page"><span class="heading_text">Content</span></h3>
+                <div>
+                    <ul>
+                        <li><a href="#">Site's title</a></li>
+                        <li><a href="#">Site's homepage text</a></li>
+                        <li><a href="#">Manage pages</a></li>                    
+                        <li><a href="#">more...</a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_32_console"><span class="heading_text">Management tools</span></h3>
+                <div>
+                    <ul>
+                        <li><a href="#">Registered users</a></li>
+                        <li><a href="#">Contact us emails</a></li>
+                        <li><a href="#">more...</a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_32_megaphone"><span class="heading_text">Promote</span></h3>
+                <div>
+                    <ul>
+                        <li><a href="#">Invite friends</a></li>
+                        <li><a href="#">more...</a></li>
+                    </ul>
+                </div>
+                <h3 class="icon_32_help"><span class="heading_text">Help</span></h3>
+                <div>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse_menu" class="ui-widget collapser">
+                <p title=".ui-icon-arrowthickstop-1-w" class="ui-state-default ui-corner-all">
+                    <span class="ui-icon ui-icon-arrowthickstop-1-w"></span>
+                </p>
+                <span id="collapse_menu_text" class="text">Collapse Menu</span>
+            </div>
+        </div>
+    </body>
+</html>

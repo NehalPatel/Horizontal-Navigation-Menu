@@ -1,0 +1,79 @@
+/*
+Document   : style
+Created on : 30 May, 2013, 6:07:26 PM
+Author     : Nehal
+Description:
+Purpose of the stylesheet follows.
+*/
+
+root {
+display: block;
+}
+
+#left_sidebar{
+    width : 200px;
+}
+
+.icon_32_color, .icon_32_console, .icon_32_help, .icon_32_megaphone, .icon_32_page, .icon_32_setup, .icon_32_star{
+	background: url(../images/sprites.png) no-repeat;
+}
+
+.icon_32_color{
+	background-position: 0 -54px ;
+}
+
+.icon_32_console{
+	background-position: 0 -155px ;
+}
+
+.icon_32_help{
+	background-position: 0 -307px ;
+}
+
+.icon_32_megaphone{
+	background-position: 0 -207px ;
+}
+
+.icon_32_page{
+	background-position: 0 -106px ;
+}
+
+.icon_32_setup{
+	background-position: 0 -7px ;
+}
+
+.icon_32_star{
+	background-position: 0 -257px ;
+}
+
+#accordion ul{
+	margin:0;
+	padding: 0 15px;
+}
+#accordion li{
+	list-style-type:none;
+	margin: 5px 0;
+}
+#accordion li a{
+	text-decoration:none
+}
+
+#collapse_menu{
+	cursor:pointer;
+}
+#collapse_menu p{
+	margin: 2px;
+	position: relative;
+	padding: 4px 0;
+	float: left;
+	list-style: none;
+}
+#collapse_menu span.ui-icon {	
+	float: left;
+	margin: 0 4px;
+}
+#collapse_menu .text {
+	display:inline-block;
+	padding-top:9px;
+	padding-left:5px;
+}
